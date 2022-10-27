@@ -18,8 +18,15 @@ header nav{
     height: 7cm;
     margin-top: 0.5cm;
  }
+ html {
+   height: 100%;
+}
  body{
-    background-color: rgb(209, 209, 172);
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to top, yellow, orangered);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  }
  .centro{
     margin: auto;
@@ -35,6 +42,7 @@ header nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 1.5cm;
  }
  .links{
     color: black;
@@ -54,7 +62,7 @@ ul{
     flex-direction: row;
 }
 footer{
-   background-color: grey;
+   background-color: yellow;
    bottom: 0%;
    position: fixed;
    display: flex;
@@ -108,6 +116,7 @@ body aside{
 }
 .izq{
    margin-left: 0.5cm;
+   margin-top: 1cm;
 }
 .der{
    margin-left: 3.5cm;
@@ -146,4 +155,37 @@ h1{
 }
 .imagen{
    margin-top: 3cm;
+}
+@media (max-width: 768px) and (min-width: 1200px) { 
+   .grid{
+      display: inline-block;
+   }
+}
+@media (max-width: 768px) { 
+   .fotopersonas{
+      width: 11cm;
+      height: 7cm;
+      margin-left: 1cm;
+      margin-top: 0cm;
+      padding: auto;
+   }
+}
+@media (max-width: 768px) { 
+   .prueba{
+      display: inline-block;
+      margin-bottom: 2cm;
+   }
+}
+@media (max-width: 768px) { 
+   .cont{
+      width: 10cm;
+   }
+}
+@media (max-width: 768px) { 
+   .der{
+      width: 11cm;
+      height: 7cm;
+      margin-left: 1cm;
+      margin-top: 1cm;
+}
 }
