@@ -1,0 +1,148 @@
+.letra{
+    font-style: italic;
+    font-size: 400%;
+    text-align: center;
+}
+.centrarlo{
+   margin-top: 5cm;
+}
+.parbien{
+    margin-right: 25%;
+    margin-left: 25%;
+}
+header nav{
+    background-color: orangered;
+    width: 100%;
+}
+.foto{
+    width: 7cm;
+    height: 7cm;
+    margin-top: 0.5cm;
+ }
+ body{
+    background-color: rgb(209, 209, 172);
+ }
+ .centro{
+    margin: auto;
+    display: block;
+ }
+ .foto{
+    width: 7cm;
+    height: 7cm;
+    margin-top: 0.5cm;
+ }
+ .padre-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+ .links{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    flex-direction: row;
+}
+footer{
+    background-color: grey;
+    width: 100%;
+    height: 1fr;
+    bottom: 0%;
+    position: fixed;
+}
+footer{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 0cm;
+   gap: 10px;
+}
+.personas{
+    margin-left: 5%;
+    margin-top: -18%;
+    width: 40%;
+    height: 40%;
+    padding: 0%;
+    border-width: 0ch;
+ }
+ .parrafo{
+    text-align: center;
+    width: 15cm;
+    margin-left: 55%;
+    margin-top: 6%;
+ }
+ .contanos{
+    position: absolute;
+    width: 18cm;
+    height: 10cm;
+ }
+ .grid{
+    display: grid;
+    grid-template-areas:"header header"
+                        "formulario foto"
+                        "footer footer";
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 1fr 5fr 1fr;
+ }
+ header{
+    grid-area: header;
+ }
+ section{
+    grid-area: formulario;
+ }
+ aside{
+    grid-area: foto;
+ }
+ footer{
+    grid-area: footer;
+ }
+ .comnts{
+   background-color: beige;
+   align-items: flex-start;
+   overflow: auto;
+   display: inline-block;
+}
+footer button{
+   background-color: grey;
+}
+body aside{
+   height: 12cm;
+   width: 12cm;
+}
+.izq{
+   margin-left: 0.5cm;
+}
+.der{
+   margin-left: 3.5cm;
+   margin-top: 1cm;
+}
+h1{
+   animation-duration: 2s;
+   animation-name: aparecer;
+   animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+.grad{
+   background-image: linear-gradient(to bottom, yellow, red);
+   height: 100%;
+}
