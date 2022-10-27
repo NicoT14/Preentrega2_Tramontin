@@ -70,9 +70,8 @@ footer{
    flex-direction: row;
    justify-content: center;
    gap: 10px;
-   position: static;
-   margin-top: auto;
-   margin-bottom: 0%;
+   position: fixed;
+   bottom: 0%;
 }
  .parrafo{
     text-align: center;
@@ -84,26 +83,6 @@ footer{
     position: absolute;
     width: 18cm;
     height: 10cm;
- }
- .grid{
-    display: grid;
-    grid-template-areas:"header header"
-                        "formulario foto"
-                        "footer footer";
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 1fr 5fr 1fr;
- }
- header{
-    grid-area: header;
- }
- section{
-    grid-area: formulario;
- }
- aside{
-    grid-area: foto;
- }
- footer{
-    grid-area: footer;
  }
  .comnts{
    background-color: beige;
