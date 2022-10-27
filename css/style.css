@@ -142,7 +142,3 @@ h1{
       opacity: 1;
    }
 }
-.grad{
-   background-image: linear-gradient(to bottom, yellow, red);
-   height: 100%;
-}
