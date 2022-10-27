@@ -4,7 +4,7 @@
     text-align: center;
 }
 .centrarlo{
-   margin-top: 5cm;
+   margin-top: 2cm;
 }
 .parbien{
     margin-right: 25%;
@@ -27,6 +27,9 @@ header nav{
     background-image: linear-gradient(to top, yellow, orangered);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 3em;
  }
  .centro{
     margin: auto;
@@ -42,7 +45,7 @@ header nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 1.5cm;
+    margin-bottom: 1cm;
  }
  .links{
     color: black;
@@ -62,15 +65,14 @@ ul{
     flex-direction: row;
 }
 footer{
-   background-color: none;
-   bottom: 0%;
-   position: fixed;
    display: flex;
    flex-wrap: wrap;
-   align-items: flex-start;
-   text-align: center;
+   flex-direction: row;
    justify-content: center;
    gap: 10px;
+   position: static;
+   margin-top: auto;
+   margin-bottom: 0%;
 }
  .parrafo{
     text-align: center;
@@ -117,10 +119,13 @@ body aside{
 .izq{
    margin-left: 0.5cm;
    margin-top: 1cm;
+   text-align: left;
 }
 .der{
    margin-left: 3.5cm;
    margin-top: 1cm;
+   width: 11cm;
+   height: 7cm;
 }
 h1{
    animation-duration: 2s;
@@ -145,6 +150,7 @@ h1{
    width: 11cm;
    height: 7cm;
    padding: auto;
+   position: relative;
 }
 .cont{
    width: 15cm;
@@ -156,7 +162,7 @@ h1{
 .imagen{
    margin-top: 3cm;
 }
-@media (max-width: 768px) and (min-width: 1200px) { 
+@media (max-width: 768px){ 
    .grid{
       display: inline-block;
    }
@@ -169,7 +175,7 @@ h1{
       margin-top: 0cm;
       padding: auto;
    }
-}
+} 
 @media (max-width: 768px) { 
    .prueba{
       display: inline-block;
@@ -188,4 +194,17 @@ h1{
       margin-left: 1cm;
       margin-top: 1cm;
 }
+}
+@media (max-width: 768px) { 
+   .centrarlo{
+      width: 11cm;
+      height: 7cm;
+      margin-left: 1cm;
+      margin-top: 0.5cm;
+      justify-content: center;
+      align-items: center;
+}
+}
+nav{
+   width: 100%;
 }
